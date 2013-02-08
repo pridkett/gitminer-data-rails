@@ -1,0 +1,990 @@
+Brief Description:
+A random crawl out from named users in the rails ecosystem.
+
+Collection Dates:
+20120505 - 20120521
+
+Projects Included:
+1116 projects spidered out from rails. This is approximately 6% of the
+total number of affiliated projects by major developers of rails. For
+a complete list see rails.db.20120505.projects.txt.
+
+The list is not strictly random. I then manually added in twitter/bootstrap,
+jquery/jquery, and joyent/node as they are the biggest projects in the
+github ecosystem. The rest of the stuff was random.
+
+Summary Statistics:
+
+Generating summary information. Please wait.
+
+Vertex Types: 
+==>null=1
+==>COMMENT=194714
+==>COMMIT=862349
+==>DOWNLOAD=1415
+==>EMAIL=66003
+==>EVENT=1301734
+==>FILE=420579
+==>GIST=24464
+==>GIT_USER=33300
+==>GOLLUM=4809
+==>GRAVATAR=207513
+==>ISSUE=86995
+==>ISSUE_EVENT=154977
+==>LABEL=1714
+==>MILESTONE=145
+==>NAME=27655
+==>PULLREQUEST=41793
+==>PULLREQUESTMARKER=67764
+==>REPOSITORY=1016672
+==>USER=286000
+
+
+Distribution of Properties by Type:
+
+
+***********************************************
+Vertex Type: COMMENT
+Number of Vertices: 194714
+Properties:
+==>body=194702
+==>comment_id=194714
+==>commitId=10255
+==>createdAt=194714
+==>gitHubId=194714
+==>line=10255
+==>path=4379
+==>position=10255
+==>sys_created_at=194714
+==>type=194714
+==>updatedAt=194714
+==>url=194714
+In Edges:
+==>COMMIT_COMMENT_OWNER=10255
+==>EVENT_COMMENT=83487
+==>EVENT_COMMIT_COMMENT=10255
+==>ISSUE_COMMENT=181489
+==>ISSUE_COMMENT_OWNER=181493
+==>PULLREQUEST_COMMENT_OWNER=34064
+==>PULLREQUEST_ISSUE_COMMENT=34064
+Out Edges:
+==>COMMIT_COMMENT_REPO=10255
+
+
+***********************************************
+Vertex Type: COMMIT
+Number of Vertices: 862349
+Properties:
+==>commitId=632396
+==>date=239279
+==>hash=862349
+==>isMerge=239279
+==>message=858377
+==>sys_created_at=862349
+==>type=862349
+==>url=632396
+In Edges:
+==>COMMIT_PARENT=256486
+==>EVENT_COMMIT=750596
+Out Edges:
+==>AUTHOR=858630
+==>CHANGED=3407217
+==>COMMITTER=239279
+==>COMMIT_PARENT=256486
+==>REPOSITORY=924528
+
+
+***********************************************
+Vertex Type: DOWNLOAD
+Number of Vertices: 1415
+Properties:
+==>contentType=1415
+==>description=804
+==>downloadCount=1415
+==>download_id=1415
+==>gitHubId=1415
+==>htmlUrl=1415
+==>name=1415
+==>size=1415
+==>sys_created_at=1415
+==>type=1415
+==>url=1415
+In Edges:
+==>EVENT_DOWNLOAD=1415
+Out Edges:
+
+
+***********************************************
+Vertex Type: EMAIL
+Number of Vertices: 66003
+Properties:
+==>email=66003
+==>sys_created_at=66003
+==>type=66003
+In Edges:
+==>EMAIL=78149
+Out Edges:
+==>GRAVATAR_HASH=65210
+
+
+***********************************************
+Vertex Type: EVENT
+Number of Vertices: 1301734
+Properties:
+==>action=83487
+==>after=497
+==>before=497
+==>createdAt=1301734
+==>description=81480
+==>eventAction=409412
+==>eventType=1301734
+==>event_id=1301734
+==>head=484102
+==>masterBranch=113602
+==>number=36982
+==>ref=569113
+==>ref_type=122064
+==>size=483579
+==>sys_created_at=1301734
+==>type=1301734
+In Edges:
+==>USER_EVENT=1598579
+Out Edges:
+==>EVENT_COMMENT=83487
+==>EVENT_COMMIT=729519
+==>EVENT_COMMIT_COMMENT=10255
+==>EVENT_DOWNLOAD=1415
+==>EVENT_FOLLOW_USER=55887
+==>EVENT_FORKEE=49338
+==>EVENT_GIST=42894
+==>EVENT_GOLLUM=12228
+==>EVENT_ISSUE=122530
+==>EVENT_MEMBER=4281
+==>EVENT_PULL_REQUEST=36982
+==>EVENT_REPO=1301734
+
+
+***********************************************
+Vertex Type: FILE
+Number of Vertices: 420579
+Properties:
+==>sys_created_at=420579
+==>token=420579
+==>type=420579
+In Edges:
+==>CHANGED=3407217
+Out Edges:
+
+
+***********************************************
+Vertex Type: GIST
+Number of Vertices: 24464
+Properties:
+==>comments=24464
+==>createdAt=24464
+==>description=15550
+==>gist_id=24464
+==>gitPullUrl=24464
+==>gitPushUrl=24464
+==>htmlUrl=24464
+==>owner=24464
+==>sys_created_at=24464
+==>type=24464
+==>updatedAt=24464
+==>url=24464
+In Edges:
+==>EVENT_GIST=42894
+Out Edges:
+
+
+***********************************************
+Vertex Type: GIT_USER
+Number of Vertices: 33300
+Properties:
+==>date=9007
+==>string=33300
+==>sys_created_at=33300
+==>timezone=9007
+==>timezoneOffset=9007
+==>type=33300
+In Edges:
+==>AUTHOR=858630
+==>COMMITTER=239279
+Out Edges:
+==>EMAIL=33294
+==>NAME=33300
+
+
+***********************************************
+Vertex Type: GOLLUM
+Number of Vertices: 4809
+Properties:
+==>action=4809
+==>htmlUrl=4809
+==>html_url=4809
+==>name=4809
+==>sha=4809
+==>sys_created_at=4809
+==>title=4808
+==>type=4809
+In Edges:
+==>EVENT_GOLLUM=12228
+Out Edges:
+
+
+***********************************************
+Vertex Type: GRAVATAR
+Number of Vertices: 207513
+Properties:
+==>hash=207513
+==>sys_created_at=207513
+==>type=207513
+In Edges:
+==>GRAVATAR=185182
+==>GRAVATAR_HASH=65210
+Out Edges:
+
+
+***********************************************
+Vertex Type: ISSUE
+Number of Vertices: 86995
+Properties:
+==>assignee=7495
+==>body=79219
+==>closedAt=54858
+==>comments=86995
+==>createdAt=86995
+==>gitHubId=86995
+==>htmlUrl=86995
+==>issue_id=86995
+==>number=86995
+==>state=86995
+==>sys_comments_added=36660
+==>sys_created_at=86995
+==>sys_events_added=36660
+==>sys_last_updated=86995
+==>title=86995
+==>type=86995
+==>updatedAt=86995
+==>user=86995
+In Edges:
+==>EVENT_ISSUE=122530
+==>ISSUE=36660
+==>ISSUE_ASSIGNEE=7563
+==>ISSUE_OWNER=87065
+Out Edges:
+==>ISSUE_COMMENT=181489
+==>ISSUE_EVENT=154977
+==>ISSUE_LABEL=21909
+==>MILESTONE=1740
+
+
+***********************************************
+Vertex Type: ISSUE_EVENT
+Number of Vertices: 154977
+Properties:
+==>commitId=21077
+==>createdAt=154977
+==>event=154977
+==>event_id=154977
+==>gitHubId=154977
+==>sys_created_at=154977
+==>type=154977
+==>url=154977
+In Edges:
+==>ISSUE_EVENT=154977
+==>ISSUE_EVENT_ACTOR=154823
+Out Edges:
+==>EVENT_COMMIT=21077
+
+
+***********************************************
+Vertex Type: LABEL
+Number of Vertices: 1714
+Properties:
+==>label=1714
+==>sys_created_at=1714
+==>type=1714
+In Edges:
+==>ISSUE_LABEL=21909
+Out Edges:
+
+
+***********************************************
+Vertex Type: MILESTONE
+Number of Vertices: 145
+Properties:
+==>closedIssues=145
+==>createdAt=145
+==>description=60
+==>dueDate=45
+==>milestone=145
+==>number=145
+==>openIssues=145
+==>state=145
+==>sys_created_at=145
+==>type=145
+==>updatedAt=145
+In Edges:
+==>MILESTONE=1740
+Out Edges:
+==>CREATOR=145
+
+
+***********************************************
+Vertex Type: NAME
+Number of Vertices: 27655
+Properties:
+==>name=27655
+==>sys_created_at=27655
+==>type=27655
+In Edges:
+==>NAME=33300
+Out Edges:
+
+
+***********************************************
+Vertex Type: PULLREQUEST
+Number of Vertices: 41793
+Properties:
+==>additions=41793
+==>body=30777
+==>closedAt=27324
+==>comments=41793
+==>commits=41793
+==>createdAt=38830
+==>deletions=41793
+==>diffUrl=38830
+==>gitHubId=41793
+==>htmlUrl=38830
+==>issueCreatedAt=38830
+==>issueUpdatedAt=38830
+==>issueUrl=38830
+==>merged_at=16682
+==>number=41793
+==>patchUrl=38830
+==>pullrequest_id=41793
+==>state=38830
+==>sys_created_at=41793
+==>sys_discussions_added=14616
+==>sys_update_complete=14616
+==>title=41791
+==>type=41793
+==>updatedAt=38830
+==>url=38830
+In Edges:
+==>EVENT_PULL_REQUEST=36982
+==>PULLREQUEST=41793
+==>PULLREQUEST_OWNER=38834
+Out Edges:
+==>PULLREQUEST_BASE=39349
+==>PULLREQUEST_HEAD=40500
+==>PULLREQUEST_ISSUE_COMMENT=34064
+==>PULLREQUEST_MERGED_BY=16173
+
+
+***********************************************
+Vertex Type: PULLREQUESTMARKER
+Number of Vertices: 67764
+Properties:
+==>label=67764
+==>ref=67764
+==>sha=67764
+==>sys_created_at=67764
+==>type=67764
+In Edges:
+==>PULLREQUEST_BASE=39349
+==>PULLREQUEST_HEAD=40500
+Out Edges:
+==>PULLREQUEST_MARKER_USER=68234
+==>REPOSITORY=66041
+
+
+***********************************************
+Vertex Type: REPOSITORY
+Number of Vertices: 1016672
+Properties:
+==>cloneUrl=992946
+==>createdAt=992946
+==>description=886975
+==>forks=992946
+==>fullname=1014548
+==>gitHubId=1014548
+==>gitUrl=992946
+==>hasDownloads=992946
+==>hasIssues=992946
+==>hasWiki=992946
+==>homepage=433670
+==>htmlUrl=992946
+==>isFork=992946
+==>isPrivate=992946
+==>language=883772
+==>masterBranch=46942
+==>mirrorUrl=503
+==>name=992946
+==>openIssues=992946
+==>pushedAt=976230
+==>reponame=1016672
+==>size=992946
+==>sshUrl=992946
+==>svnUrl=992946
+==>sys_created_at=1016672
+==>sys_last_updated=992946
+==>type=1016672
+==>updatedAt=992946
+==>url=1014548
+==>watchers=992946
+In Edges:
+==>COMMIT_COMMENT_REPO=10255
+==>EVENT_FORKEE=49338
+==>EVENT_REPO=1301734
+==>REPOSITORY=990569
+==>REPO_FORK=31836
+==>REPO_OWNER=992964
+==>REPO_PARENT=8
+==>REPO_SOURCE=8
+==>REPO_WATCHED=4543035
+Out Edges:
+==>ISSUE=36660
+==>PULLREQUEST=41793
+==>REPO_COLLABORATOR=4565
+==>REPO_CONTRIBUTOR=7551
+==>REPO_FORK=31836
+==>REPO_PARENT=8
+==>REPO_SOURCE=8
+
+
+***********************************************
+Vertex Type: USER
+Number of Vertices: 286000
+Properties:
+==>biography=11218
+==>blog=49606
+==>collaborators=103511
+==>company=33385
+==>createdAt=113219
+==>diskUsage=103511
+==>email=44555
+==>followers=103511
+==>following=103511
+==>fullname=77443
+==>gitHubId=186033
+==>gravatarId=184163
+==>location=59414
+==>login=286000
+==>name=77443
+==>ownedPrivateRepoCount=103511
+==>private_gist_count=103511
+==>public_gist_count=103511
+==>public_repo_count=103511
+==>sys_created_at=286000
+==>sys_events_added=16436
+==>sys_last_full_update=103511
+==>sys_last_updated=186033
+==>totalPrivateRepoCount=103511
+==>type=286000
+==>url=184163
+==>user_type=113219
+In Edges:
+==>CREATOR=145
+==>EVENT_FOLLOW_USER=55887
+==>EVENT_MEMBER=4281
+==>FOLLOWER=739848
+==>FOLLOWING=787545
+==>ORGANIZATION_MEMBER=2373
+==>PULLREQUEST_MARKER_USER=68234
+==>PULLREQUEST_MERGED_BY=16173
+==>REPO_COLLABORATOR=4565
+==>REPO_CONTRIBUTOR=7551
+Out Edges:
+==>COMMIT_COMMENT_OWNER=10255
+==>EMAIL=44855
+==>FOLLOWER=739848
+==>FOLLOWING=787545
+==>GRAVATAR=185182
+==>ISSUE_ASSIGNEE=7563
+==>ISSUE_COMMENT_OWNER=181493
+==>ISSUE_EVENT_ACTOR=154823
+==>ISSUE_OWNER=87065
+==>ORGANIZATION_MEMBER=2373
+==>PULLREQUEST_COMMENT_OWNER=34064
+==>PULLREQUEST_OWNER=38834
+==>REPO_OWNER=992964
+==>REPO_WATCHED=4543035
+==>USER_EVENT=1598579
+
+Edge Types: 
+
+
+Distribution of Edges Sources by Type
+
+
+***********************************************
+Edge Label: GRAVATAR
+Number of Edges: 185182
+In Vertices:
+==>GRAVATAR=185182
+Out Vertices:
+==>USER=185182
+
+
+***********************************************
+Edge Label: REPO_OWNER
+Number of Edges: 992964
+In Vertices:
+==>REPOSITORY=992964
+Out Vertices:
+==>USER=992964
+
+
+***********************************************
+Edge Label: ORGANIZATION_MEMBER
+Number of Edges: 2373
+In Vertices:
+==>USER=2373
+Out Vertices:
+==>USER=2373
+
+
+***********************************************
+Edge Label: REPO_COLLABORATOR
+Number of Edges: 4565
+In Vertices:
+==>USER=4565
+Out Vertices:
+==>REPOSITORY=4565
+
+
+***********************************************
+Edge Label: REPO_CONTRIBUTOR
+Number of Edges: 7551
+In Vertices:
+==>USER=7551
+Out Vertices:
+==>REPOSITORY=7551
+
+
+***********************************************
+Edge Label: REPO_WATCHED
+Number of Edges: 4543035
+In Vertices:
+==>REPOSITORY=4543035
+Out Vertices:
+==>USER=4543035
+
+
+***********************************************
+Edge Label: REPO_FORK
+Number of Edges: 31836
+In Vertices:
+==>REPOSITORY=31836
+Out Vertices:
+==>REPOSITORY=31836
+
+
+***********************************************
+Edge Label: ISSUE_LABEL
+Number of Edges: 21909
+In Vertices:
+==>LABEL=21909
+Out Vertices:
+==>ISSUE=21909
+
+
+***********************************************
+Edge Label: ISSUE_OWNER
+Number of Edges: 87065
+In Vertices:
+==>ISSUE=87065
+Out Vertices:
+==>USER=87065
+
+
+***********************************************
+Edge Label: ISSUE
+Number of Edges: 36660
+In Vertices:
+==>ISSUE=36660
+Out Vertices:
+==>REPOSITORY=36660
+
+
+***********************************************
+Edge Label: ISSUE_ASSIGNEE
+Number of Edges: 7563
+In Vertices:
+==>ISSUE=7563
+Out Vertices:
+==>USER=7563
+
+
+***********************************************
+Edge Label: CREATOR
+Number of Edges: 145
+In Vertices:
+==>USER=145
+Out Vertices:
+==>MILESTONE=145
+
+
+***********************************************
+Edge Label: MILESTONE
+Number of Edges: 1740
+In Vertices:
+==>MILESTONE=1740
+Out Vertices:
+==>ISSUE=1740
+
+
+***********************************************
+Edge Label: ISSUE_COMMENT_OWNER
+Number of Edges: 181493
+In Vertices:
+==>COMMENT=181493
+Out Vertices:
+==>USER=181493
+
+
+***********************************************
+Edge Label: ISSUE_COMMENT
+Number of Edges: 181489
+In Vertices:
+==>COMMENT=181489
+Out Vertices:
+==>ISSUE=181489
+
+
+***********************************************
+Edge Label: ISSUE_EVENT
+Number of Edges: 154977
+In Vertices:
+==>ISSUE_EVENT=154977
+Out Vertices:
+==>ISSUE=154977
+
+
+***********************************************
+Edge Label: ISSUE_EVENT_ACTOR
+Number of Edges: 154823
+In Vertices:
+==>ISSUE_EVENT=154823
+Out Vertices:
+==>USER=154823
+
+
+***********************************************
+Edge Label: EVENT_COMMIT
+Number of Edges: 750596
+In Vertices:
+==>COMMIT=750596
+Out Vertices:
+==>EVENT=729519
+==>ISSUE_EVENT=21077
+
+
+***********************************************
+Edge Label: PULLREQUEST_OWNER
+Number of Edges: 38834
+In Vertices:
+==>PULLREQUEST=38834
+Out Vertices:
+==>USER=38834
+
+
+***********************************************
+Edge Label: PULLREQUEST
+Number of Edges: 41793
+In Vertices:
+==>PULLREQUEST=41793
+Out Vertices:
+==>REPOSITORY=41793
+
+
+***********************************************
+Edge Label: PULLREQUEST_MARKER_USER
+Number of Edges: 68234
+In Vertices:
+==>USER=68234
+Out Vertices:
+==>PULLREQUESTMARKER=68234
+
+
+***********************************************
+Edge Label: REPOSITORY
+Number of Edges: 990569
+In Vertices:
+==>REPOSITORY=990569
+Out Vertices:
+==>COMMIT=924528
+==>PULLREQUESTMARKER=66041
+
+
+***********************************************
+Edge Label: PULLREQUEST_HEAD
+Number of Edges: 40500
+In Vertices:
+==>PULLREQUESTMARKER=40500
+Out Vertices:
+==>PULLREQUEST=40500
+
+
+***********************************************
+Edge Label: PULLREQUEST_BASE
+Number of Edges: 39349
+In Vertices:
+==>PULLREQUESTMARKER=39349
+Out Vertices:
+==>PULLREQUEST=39349
+
+
+***********************************************
+Edge Label: PULLREQUEST_COMMENT_OWNER
+Number of Edges: 34064
+In Vertices:
+==>COMMENT=34064
+Out Vertices:
+==>USER=34064
+
+
+***********************************************
+Edge Label: PULLREQUEST_ISSUE_COMMENT
+Number of Edges: 34064
+In Vertices:
+==>COMMENT=34064
+Out Vertices:
+==>PULLREQUEST=34064
+
+
+***********************************************
+Edge Label: PULLREQUEST_MERGED_BY
+Number of Edges: 16173
+In Vertices:
+==>USER=16173
+Out Vertices:
+==>PULLREQUEST=16173
+
+
+***********************************************
+Edge Label: GRAVATAR_HASH
+Number of Edges: 65210
+In Vertices:
+==>GRAVATAR=65210
+Out Vertices:
+==>EMAIL=65210
+
+
+***********************************************
+Edge Label: EMAIL
+Number of Edges: 78149
+In Vertices:
+==>EMAIL=78149
+Out Vertices:
+==>GIT_USER=33294
+==>USER=44855
+
+
+***********************************************
+Edge Label: USER_EVENT
+Number of Edges: 1598579
+In Vertices:
+==>EVENT=1598579
+Out Vertices:
+==>USER=1598579
+
+
+***********************************************
+Edge Label: EVENT_REPO
+Number of Edges: 1301734
+In Vertices:
+==>REPOSITORY=1301734
+Out Vertices:
+==>EVENT=1301734
+
+
+***********************************************
+Edge Label: FOLLOWER
+Number of Edges: 739848
+In Vertices:
+==>USER=739848
+Out Vertices:
+==>USER=739848
+
+
+***********************************************
+Edge Label: FOLLOWING
+Number of Edges: 787545
+In Vertices:
+==>USER=787545
+Out Vertices:
+==>USER=787545
+
+
+***********************************************
+Edge Label: EVENT_FOLLOW_USER
+Number of Edges: 55887
+In Vertices:
+==>USER=55887
+Out Vertices:
+==>EVENT=55887
+
+
+***********************************************
+Edge Label: NAME
+Number of Edges: 33300
+In Vertices:
+==>NAME=33300
+Out Vertices:
+==>GIT_USER=33300
+
+
+***********************************************
+Edge Label: AUTHOR
+Number of Edges: 858630
+In Vertices:
+==>GIT_USER=858630
+Out Vertices:
+==>COMMIT=858630
+
+
+***********************************************
+Edge Label: EVENT_PULL_REQUEST
+Number of Edges: 36982
+In Vertices:
+==>PULLREQUEST=36982
+Out Vertices:
+==>EVENT=36982
+
+
+***********************************************
+Edge Label: EVENT_ISSUE
+Number of Edges: 122530
+In Vertices:
+==>ISSUE=122530
+Out Vertices:
+==>EVENT=122530
+
+
+***********************************************
+Edge Label: EVENT_COMMENT
+Number of Edges: 83487
+In Vertices:
+==>COMMENT=83487
+Out Vertices:
+==>EVENT=83487
+
+
+***********************************************
+Edge Label: EVENT_GIST
+Number of Edges: 42894
+In Vertices:
+==>GIST=42894
+Out Vertices:
+==>EVENT=42894
+
+
+***********************************************
+Edge Label: EVENT_FORKEE
+Number of Edges: 49338
+In Vertices:
+==>REPOSITORY=49338
+Out Vertices:
+==>EVENT=49338
+
+
+***********************************************
+Edge Label: COMMIT_COMMENT_OWNER
+Number of Edges: 10255
+In Vertices:
+==>COMMENT=10255
+Out Vertices:
+==>USER=10255
+
+
+***********************************************
+Edge Label: COMMIT_COMMENT_REPO
+Number of Edges: 10255
+In Vertices:
+==>REPOSITORY=10255
+Out Vertices:
+==>COMMENT=10255
+
+
+***********************************************
+Edge Label: EVENT_COMMIT_COMMENT
+Number of Edges: 10255
+In Vertices:
+==>COMMENT=10255
+Out Vertices:
+==>EVENT=10255
+
+
+***********************************************
+Edge Label: EVENT_MEMBER
+Number of Edges: 4281
+In Vertices:
+==>USER=4281
+Out Vertices:
+==>EVENT=4281
+
+
+***********************************************
+Edge Label: EVENT_GOLLUM
+Number of Edges: 12228
+In Vertices:
+==>GOLLUM=12228
+Out Vertices:
+==>EVENT=12228
+
+
+***********************************************
+Edge Label: EVENT_DOWNLOAD
+Number of Edges: 1415
+In Vertices:
+==>DOWNLOAD=1415
+Out Vertices:
+==>EVENT=1415
+
+
+***********************************************
+Edge Label: REPO_PARENT
+Number of Edges: 8
+In Vertices:
+==>REPOSITORY=8
+Out Vertices:
+==>REPOSITORY=8
+
+
+***********************************************
+Edge Label: REPO_SOURCE
+Number of Edges: 8
+In Vertices:
+==>REPOSITORY=8
+Out Vertices:
+==>REPOSITORY=8
+
+
+***********************************************
+Edge Label: COMMITTER
+Number of Edges: 239279
+In Vertices:
+==>GIT_USER=239279
+Out Vertices:
+==>COMMIT=239279
+
+
+***********************************************
+Edge Label: COMMIT_PARENT
+Number of Edges: 256486
+In Vertices:
+==>COMMIT=256486
+Out Vertices:
+==>COMMIT=256486
+
+
+***********************************************
+Edge Label: CHANGED
+Number of Edges: 3407217
+In Vertices:
+==>FILE=3407217
+Out Vertices:
+==>COMMIT=3407217
