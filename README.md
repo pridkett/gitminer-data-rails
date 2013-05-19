@@ -14,6 +14,8 @@ The best way to get a grasp of the data is to read our paper from MSR 2013, "[A 
 
 After reading the paper you should take a look at [overview.txt][overview], which contains summary information regarding all of the vertices and edges in the dataset and covers how they're linked together. This is particularly useful if you want to know how to get from one vertex type to another.
 
+Finally, [our presentation from MSR 2013 is available online][presentation]. Feel free to check it out.
+
 usage rights
 ------------
 
@@ -40,3 +42,4 @@ this data.
 [mailto]: mailto:patrick@wagstrom.net
 [overview]: https://raw.github.com/pridkett/gitminer-data-rails/master/overview.txt
 [paper]: https://raw.github.com/pridkett/gitminer-data-rails/master/MSR_2013_A_Network_of_Rails.pdf
+[presentation]: https://docs.google.com/presentation/d/1i5b1AeBxna2JY6tTWIxetSs3WEXPzN_Tn3aetyC3cWc/edit?usp=sharing
